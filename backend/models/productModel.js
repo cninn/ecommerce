@@ -4,23 +4,28 @@ const Schema = mongoose.Schema;
 const productSchema = new Schema({
     name: {
         type: String,
-        required: true
+        required: [true, 'Please add a name']
     },
     image: {
         type: String,
-        required: true
+      /*   required: [true, 'Please add an image'] */
     },
-    brand: {
-        type: String,
-        required: true
-    },
-    price: {
+
+    new_price: {
         type: Number,
-        required: true
+        required: [true, 'Please add a price']
+    },
+    old_price: {
+        type: Number,
+        required: [true, 'Please add a price']
+    },
+    avilable: {
+        type: Boolean,
+       default: true
     },
     category: {
         type: String,
-        required: true
+        required: [true, 'Please add a category']
     },
 },{timestamps: true});
 
