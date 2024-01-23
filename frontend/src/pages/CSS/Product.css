@@ -1,0 +1,11 @@
+.productmain{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: max-content;
+  
+   
+    background: linear-gradient(180deg, var(--ana-renk), var(--birincil-yardimci-renk));
+    overflow: hidden;
+}

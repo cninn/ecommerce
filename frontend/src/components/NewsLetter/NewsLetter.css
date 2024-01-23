@@ -1,0 +1,205 @@
+
+.newsLetter{
+        width: 100%;
+        height: 50vh;
+      
+      background: linear-gradient(180deg, var(--birincil-yardimci-renk), var(--aksesuar-renk));
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 2rem;
+        padding: 20px;
+        color: white;
+        position: relative;
+  
+       
+      
+      
+}
+.newsLetter-left{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+   
+
+}
+.newsLetter-left img{
+    width: 300px;
+    position: absolute;
+    top: 20%;
+    left: 0;
+
+}
+.newsLetter-img{
+    width: 250px;
+    position: absolute;
+    top: 20%;
+    right: 50px;
+   
+}
+
+
+
+form{
+   
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+    background: linear-gradient(180deg, var(--birincil-yardimci-renk), var(--aksesuar-renk));
+    padding: 80px 40px;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px -2px black;
+    
+}
+.label{
+    text-transform: uppercase;
+    font-size: 20px;
+    font-weight: 700;
+    color: #e60049b6;
+
+}
+form input{
+    padding: 10px;
+    border: none;
+    outline: none;
+    border-radius: 5px;
+    width: 300px;
+    margin-right: 10px;
+
+}
+form button{
+    width: 250px;
+    padding: 10px;
+    border: none;
+    outline: none;
+    border-radius: 5px;
+    background-color:var(--aksesuar-renk);
+    color: white;
+    cursor: pointer;
+    font-size: 20px;
+    box-shadow: 0 2px 5px -2px black;
+
+}
+form button:hover{
+    transform: scale(1.1);
+    transition: 0.5s ease;
+
+}
+.newsLetter h2{
+    font-size: 34px;
+    margin: 0;
+    text-shadow: -2px -2px 5px black;
+    text-transform: uppercase;
+    
+}
+.newsLetter p{
+    margin: 0;
+    text-shadow: -2px -2px 5px black;
+    font-size: 22px;
+
+}
+hr{
+    width: 100%;
+    height: 5px;
+    background-color: #e6004994;
+    border: none;
+}
+@media screen and (max-width: 1280px) {
+    .newsLetter-left img{
+        width: 230px;
+        position: absolute;
+        top:0;
+        left: 0;
+        
+    
+    }
+    .newsLetter-img{
+        width: 180px;
+        position: absolute;
+        top: 0;
+        right: 50px;
+       
+    }
+    .newsLetter h2{
+        font-size: 30px;
+        margin: 0;
+        text-shadow: -2px -2px 5px black;
+        text-transform: uppercase;
+        z-index: 1;
+        
+    }
+    
+
+}
+@media screen and (max-width: 1100px) {
+    .newsLetter{
+        align-items: flex-start;
+        height: max-content;
+    }
+    .newsLetter-left img{
+        width: 230px;
+        position: absolute;
+        top:0;
+        left: 0;
+        
+    
+    }
+    .newsLetter-img{
+        width: 160px;
+        position: absolute;
+        top: 0;
+        right: 50px;
+       
+    }
+    .newsLetter h2{
+        font-size: 24px;
+        max-width: 300px;
+        text-align: center;
+        margin: 0;
+        text-shadow: -2px -2px 5px black;
+        text-transform: uppercase;
+        z-index: 1;
+        
+    }
+    
+}
+@media screen and (max-width: 650px) {
+    .newsLetter{
+        flex-direction: column;
+        height: max-content;
+        width: 100%;
+    }
+    form{
+        width: 100%;
+        
+    }
+    form input{
+        width: 90vw;
+    }
+    .newsLetter-left img{
+        width: 100px;
+        position: absolute;
+        top:0;
+        left: 0;
+        
+    
+    }
+    .newsLetter-img{
+        width: 80px;
+        position: absolute;
+        top: 0;
+        right: 0;
+       
+    }
+    .newsLetter p{
+        margin: 0;
+        text-shadow: -2px -2px 5px black;
+        font-size: 18px;
+    
+    }
+}
+@media screen and (max-width: 500px) {
+}

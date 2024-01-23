@@ -1,0 +1,19 @@
+.bread-crums{
+    font-size: 24px;
+    margin-top: 1rem;
+    text-align: center;
+    
+    color:#272727;
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+   
+}
+.bread-crums img{
+    filter: brightness(0) invert(1);
+    width: 10px;
+   
+    
+}

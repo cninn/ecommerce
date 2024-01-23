@@ -1,0 +1,126 @@
+.shop-category{
+    display: flex;
+    flex-direction: column;
+    margin-top: 2rem;
+    background: linear-gradient(180deg, var(--ana-renk), var(--birincil-yardimci-renk));
+    
+}
+
+.category-img{
+    width: 80%;
+    margin: auto;
+    border :20px solid black;
+    border-left: 80px solid black;
+    border-right: 80px solid black;
+    
+    
+    
+}
+.category-products{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    padding: 10px;
+    
+}
+.shopcategory-indexSort{
+    width: 50%;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 2rem;
+    margin-top: 3rem;
+    margin-bottom: 2rem;
+    font-size: 20px;
+    font-weight: 600;
+    background-color:rgba(255, 255, 255, 0.541);
+    letter-spacing: 1px;
+   
+    padding: 10px;
+    border-radius: 10px;
+    
+ 
+
+}
+.shopcategory-sort{
+    margin: 0;
+    border: 1px solid black;
+    padding:5px 20px;
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+   
+    
+    
+}
+.loadmore{
+    width:300px;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    font-size: 30px;
+    font-weight: 600;
+    background: linear-gradient(180deg, var(--aksesuar-renk), var(--vurgu-renk));
+    border-radius: 20px;
+    padding: 7px 20px;
+    cursor: pointer;
+    color: white;
+}
+.loadmore:hover{
+    background: linear-gradient(180deg, var(--vurgu-renk), var(--aksesuar-renk));
+    transition:  all 0.4s;
+}
+@media screen and (max-width: 1204px) {
+    .shopcategory-indexSort{
+        width: 80%;
+     
+    
+    }
+    .category-img{
+        width: 90%;
+       
+        
+    }
+}
+@media screen and (max-width: 800px) {
+    .shopcategory-indexSort{
+        width: 90%;
+     
+    
+    }
+    .category-img{
+        width: 90%;
+       
+        margin: auto;
+        border :none;
+      
+        border-left: 0px!important;
+        border-right: 0px!important;
+        
+    }
+}
+@media screen and (max-width: 600px) {
+    .shopcategory-indexSort{
+        width: 90%;
+        font-size: 16px;
+     
+    
+    }
+}
+@media screen and (max-width: 500px) {
+    .shopcategory-indexSort{
+        flex-direction: column;
+        width: 90%;
+        font-size: 14px;
+        gap: 5px;
+        padding: 30px 20px;
+     
+    
+    }
+}

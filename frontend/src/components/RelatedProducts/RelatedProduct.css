@@ -1,0 +1,22 @@
+.related-products{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.related-products span{
+    font-size: 24px;
+    font-weight: 700;
+    opacity: 0.8;
+}
+
+.related-products-item{
+    display: flex;
+    zoom: 0.75;
+}
+
+@media screen and (max-width: 800px) {
+    .related-products-item{
+        flex-direction: column;
+    }
+}
