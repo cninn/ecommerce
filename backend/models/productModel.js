@@ -6,7 +6,7 @@ const productSchema = new Schema({
         type: String,
         required: [true, 'Please add a name']
     },
-    image: {
+    product: {
         type: String,
       /*   required: [true, 'Please add an image'] */
     },

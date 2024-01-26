@@ -8,9 +8,14 @@ const path = require("path");
 
 const connect = require("./connect");
 const productRoute = require("./routes/productRoute");
+const userRoute = require("./routes/userRoute");
 
 app.use(express.json());
+app.use(express.urlencoded({ extended: true }));
+
 app.use(cors());
+
+
 
 port = process.env.PORT || 5000;
 
@@ -32,12 +37,13 @@ app.use("/api/upload/images", express.static(path.join(__dirname, "upload/images
 
 app.post("/api/upload", upload.single("product"), (req, res) => {
   res.status(200).json({
-    success: 1,
+    success: true,
     image_url: `http://localhost:${port}/api/upload/images/${req.file.filename}`,
   });
 });
 
 app.use("/api/product", productRoute);
+app.use("/api/user", userRoute);
 
 app.get("/", (req, res) => {
   res.send("<h1>ECOMMERCES API ROUTES. CNINNMAKES-DEV</h1>");

@@ -1,0 +1,33 @@
+.admin-navbar{
+    width: 100%;
+    width: 100vw;
+    height: max-content;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1rem 3rem;
+    background-color: rgb(196, 194, 194);
+   
+}
+.admin-navbar .nav-logo{
+   width: 200px;
+
+}
+.admin-navbar .nav-profile{
+    width: 75px;
+    height: 75px;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+@media screen and (max-width:800px){
+    .admin-navbar{
+        padding: 1rem;
+    }
+    .admin-navbar .nav-logo{
+        width: 180px;
+    }
+    .admin-navbar .nav-profile{
+        width: 70px;
+    }
+}
